@@ -1,0 +1,126 @@
+<!-- comment: ghi chú -->
+<!-- 
+    HTML: Hypertext Markup Language
+    Ngôn ngữ đánh dấu siêu văn bản
+    Đây không phải ngôn ngữ lập trình
+ -->
+ 
+ <!-- document mà muốn hiển thị như một trang web 
+thì nó cần được chạy trên nền tảng là là web page (web browser) -->
+<!-- Ngay từ lúc đầu mình khai báo cho web browser biết rằng 
+document của mình được viết bằng gì? -->
+<!-- Trong html, các phần tử là các tag|thẻ -->
+<!-- Một tag trông như thế nào?
+<tagName attribute> content </tagName>  -->
+<!DOCTYPE html>  <!-- Kiểu của tag DOCTYPE là html -->
+<html lang="vi"> <!-- Chọn kiểu ngôn ngữ cho html -->
+    <head>
+        <meta charset="UTF-8"> <!-- Gói tài nguyên -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Gói tài nguyên -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gói tài nguyên -->
+        <!-- <meta name="hoailinh141ty" content="Hoailinhdequen141ty">: cách để GG quét cho lên đầu -->
+        <title>Lesson 1</title> <!-- Tên web -->
+    </head>
+    <body>
+        <a href="#chap1">Bấm vô tôi để xuống Chap 1</a> <!-- Kéo xuống tag Chap 1 -->
+        <!-- bộ heading -->
+        <!-- trong html người ta thường đặt tên các tag|thẻ
+        theo cái chức năng của nó -->
+        <h1>Anh Điệp đẹp trai h1</h1> <!-- Dùng làm tiêu đề, tóm tắt ý -->
+        <h2>Anh Điệp đẹp trai h1</h2> <!-- Đều in đậm, kích thước nhỏ dần, h có số càng cao thì càng nhỏ dần -->
+        <h3>Anh Điệp đẹp trai h1</h3> <!-- Các thẻ heading có display: block - thẻ chiếm trọn hàng - không có thẻ khác cùng hàng -->
+        <h4 style="display: inline-block">Anh Điệp đẹp trai h1</h4> <!-- inline-block: thẻ mà có khối chỉ bao quanh content -->
+        <h5>Anh Điệp đẹp trai h1</h5> <!-- Khi dùng bao quanh thì có thể để các tag cùng hàng -->
+        <h6>Anh Điệp đẹp trai h1</h6>
+        <!-- bộ p - paragraphs: đoạn văn -->
+        <p>
+            Tôi tên là Điệp, nhà tôi ở quận 9, <br />
+            3 đời nhà tôi làm gỗ, &#8194;&#8194;&#8194;đến đời tôi làm giang hồ
+        </p> <!-- Display: block -->
+        <!-- br - breakline: xuống hàng -->
+        <!-- pre - preformated: paragraph tùy biến -->
+        <pre>
+             Tôi tên là Điệp, nhà tôi ở quận 9, 
+             3 đời nhà tôi làm gỗ,       đến đời tôi làm giang hồ
+        </pre>
+        <!-- Hầu hết các thẻ mình dùng đều có style -->
+            <!-- text-align: giúp căn chỉnh lề cho text
+            Left\Right|Center|Inherit... -->
+        <p style="text-align: right">hello</p> <!-- Căn theo block của content -->
+        <p style="text-align: right"; display = "inline-block">hello2</p> <!-- Không được vì block chỉ bao quanh content -->
+        <!-- tag formating: bộ tượng hình -->
+        <p>
+            <em>Xin chào</em> <small>các</small> bạn <del>tao</del> <strong>tôi</strong> là <mark>Điệp đẹp trai</mark> 
+        </p>
+
+        <!-- i - italic: nghiêng ; em - emphasized: nhấn mạnh --x`
+        <!-- b - bold: đậm ; strong: cũng in đấm -->
+        <!-- tag formating: display của nó là inline -->
+        <!-- sub|sup -->
+        <p>H<sub>2</sub>O: nước</p>
+        <p>ax<sup>2</sup> + bx + c = 0</p>
+
+        <!-- pseudo tag: tag giả|thẻ mà không có chức năng -->
+        <!--span: thẻ không chức năng, display: inline
+            div:                     , display: block       
+        -->
+
+        <p> <span style="font-size: 20px; color: red;
+                        text-decoration: underline">X</span>in chào bạn
+        </p>
+        
+        <p style="color: red; text-align: left">
+            Lòng ta trống lắm, lòng ta sụp <br />
+            Như túp nhà không bốn vách xiêu; <br />
+            Em chẳng cứu giùm, em bỏ mặc <br />
+            Mưa đưa ta đến bến Đìu hiu.
+        </p>
+        <p style="color: blue; text-align: right">
+            Em ở bên mình; ta ngó say, <br /> 
+            Song le bên ấy với bên này <br />
+            Cũng xa như những bờ xa cách, <br />
+            Không có thuyền qua, không cánh bay.
+        </p>
+        <p style="color: red; text-align: left">
+            Ta thấy em xinh, khẽ lắc đầu. <br />
+            Bởi vì ta có được em đâu! <br />
+            Tay kia sẽ ấp nhiều tay khác, <br />
+            Môi ấy vì ai sẽ đượm mầu.
+        <hr></hr
+    >
+        </p> 
+        <h1 style="text-align: center">Bài 1: Cấu trúc html cơ bản</h1>
+        <h3>Lorem ipsum</h3>
+        <h4>1.1 Lorem ipsum dolor</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel blanditiis vitae voluptate animi optio voluptatem, rerum nemo ad dolores? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi labore unde laborum nostrum ex assumenda quisquam facilis, cumque sint maxime est dolore ut distinctio, dolor sunt expedita saepe incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas quaerat tempora suscipit quidem necessitatibus cum eaque corrupti maiores, dicta veritatis non harum cupiditate tenetur, nesciunt aut natus nisi accusamus.   </p>
+        <h4>1.2 Lorem ipsum dolor</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel blanditiis vitae voluptate animi optio voluptatem, rerum nemo ad dolores?</p> <br />
+        <h3>2. Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel blanditiis vitae voluptate animi optio voluptatem, rerum nemo ad dolores? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel blanditiis vitae voluptate animi optio voluptatem, rerum nemo ad dolores? </p> <br />
+        <hr> 
+        <!-- Link hyperlinks -->
+        <a href="https://www.facebook.com/" target="_blank">link vào đây và tới facebook</a>
+        <!-- href - hyperlink references -->
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <h1 id="chap1">Chap1</h1> <!-- Lệnh ID để định danh -->
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+        <p>Xin chào các bạn</p>
+    </body>
+</html>

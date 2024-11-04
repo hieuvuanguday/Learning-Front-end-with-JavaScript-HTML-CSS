@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- CODE HERE -->
+    <div class="container">
+        <h1 class="text-center text-info mb-3">Quản lý sinh viên</h1>
+        <form class="mb-3">
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Tên</label>
+                <input id="name" type="text" class="form-control">
+            </div>
+            <!-- Birthday -->
+            <div class="mb-3">
+                <label for="birthday" class="form-label">Ngày sinh</label>
+                <input id="birthday" type="date" class="form-control">
+            </div>
+            <!-- Bút btn submit -->
+            <button class="btn btn-primary">Thêm</button>
+        </form>
+        <!-- div thông báo -->
+        <div id="notification">
+            <!-- <div class="alert alert-success">Đã thêm thành công</div> -->
+        </div>
+        <!-- table để hiển thị students: danh sách student -->
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Hùng</td>
+                    <td>30-11-2003</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm btn-remove" data-id="SID1">
+                            Xóa
+                        </button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="./style.js"></script>
+</body>
+</html>

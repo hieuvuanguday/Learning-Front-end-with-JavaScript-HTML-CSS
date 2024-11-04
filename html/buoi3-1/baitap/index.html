@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu đăng ký du lịch</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h1 style="color: blue; text-align: center">Đăng ký du lịch</h1>
+    <form>
+        <table class="demo-tbl">
+            <tr>
+                <td>
+                    <label for="hoten">Họ và tên</label>
+                </td>
+                <td>
+                    <input id="hoten" name="name" type="text" placeholder="Nhập họ và tên" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="diachi">Địa chỉ</label>
+                </td>
+                <td>
+                    <input id="diachi" name="address" type="text" placeholder="Nhập địa chỉ" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sdt">Điện thoại</label>
+                </td>
+                <td>
+                    <input id="sdt" name="sdt" type="number" placeholder="Nhập số điện thoại">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="check">Khách Việt Nam</label>
+                </td>
+                <td>
+                    <input id="check" name="checkvn?" type="checkbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tour">Chọn tour</label>
+                </td>
+                <td>
+                    <select name="tour" id="tour">
+                        <option value="Taynguyen">Buôn Mê Thuột-Gia Lai-Kontum</option>
+                        <option value="Taybac">Cao Bằng-Bắc Kạn-Lạng Sơn</option>
+                        <option value="Mientya">Cần Thơ-Vĩnh Long-Cà Mau</option>
+                    </select>  
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                    <input id="Maybay" name="phuongtien" type="radio">
+                    <label for="Maybay">Máy bay</label>
+                    <input id="Oto" name="phuongtien" type="radio">
+                    <label for="Oto">Xe Ô tô</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset style="border-color: red; padding: 0%">
+                        <legend style="text-align: center; color: red">Số lượng đoàn khách</legend>
+                        <p style="text-align: center">
+                            <label for="adult">Người lớn</label>
+                            <input id="adult" name="soluong" type="number" style="width: 30px; height: 10px">
+                            <label for="child">Trẻ con</label> 
+                            <input id="child" name="soluong" type="number" style="width: 30px; height: 10px">
+                        </p>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ghichu">Ghi chú thêm</label>
+                </td>
+                <td>
+                    <textarea cols="30" rows="10"
+                     style="min-width: 300px; max-width: 300px; text-align: left">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" id="submit" onclick="print()">Đồng ý</button>
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td colspan="2"><span id="success">Bạn đã đăng ký thành công</span></td>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+            <script>
+            document.getElementById("success").style.display="none";
+            function print(){
+            document.getElementById("success").style.display="block";
+            }
+            </script>
+
+            <!-- <tr>
+                <td colspan="2"> 
+                    <input name="submit" type="button" value="Đồng ý">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Bạn đã đăng ký thành công</td>
+            </tr>
+        </table>
+    </form> -->
+</body>
+</html>
+

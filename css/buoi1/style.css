@@ -1,0 +1,62 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Unit size
+    đơn vị đo: px/mm/cm
+    %: ăn theo thẻ cha
+    em: coi font-size của cha là 1 đơn vị 
+    rem: coi font-size của html là 1 đơn vị   
+*/
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+.demo-ipt{
+    border: 2px solid red;
+    outline: none;
+    outline: 2px solid blue;
+    outline-offset: 2rem;
+    /* khoáng cách từ border đến outline */
+    margin: 3rem;
+    /* khoảng cách từ border ra ngoài */
+}
+/* demo border */
+.demo-border{
+    border: 3px solid teal;
+    border-top: 3px solid teal;
+    border-left: 3px solid purple;
+    border-bottom: 3px solid brown;
+    border-right: 3px solid blue;
+    /* bo tròn */
+    border-radius: 0.3rem;
+}
+/* circle */
+.demo-circle{
+    border: 3px solid black;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+/* demo text */
+.demo-text{
+    color: steelblue;
+    background-color: tomato;
+    /* direction: rtl; */
+    text-decoration: underline dotted chartreuse;
+    text-transform: capitalize;
+    text-indent: 3rem; /* thụt lề đầu dòng */
+    /* letter-spacing: 1rem; */
+    /* word-spacing: 1rem; */
+    line-height: 3rem;/* độ cao của một dòng, defaulte là 1.8rem */
+    text-shadow: 1px 2px 3px black;
+    box-shadow: 1px 2px 3px black;
+}
+.demo-text span{
+    vertical-align: middle;
+}

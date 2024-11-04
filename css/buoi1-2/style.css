@@ -1,0 +1,96 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* demo background */
+.demo1-bg{
+    background-color: red;
+    height: 100vh;
+    /* vh - viewheight: chiều dài của trang web */
+}
+.demo2-bg{
+    height: 100vh;
+    background-color: aquamarine;
+    background-image: url('./Cat.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+.demo-fixed{
+    height: 25rem;
+    background: url('./City.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    border: 3px solid grey;
+    max-width: 1280px;
+    margin: 0 auto;
+    /* chuẩn của các dòng lap thông thường */
+}
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/* cho cha nhìn thấy con bị float */
+.banner-block{
+    border: 3px solid red;
+    height: 25rem;
+}
+.banner-left{
+    border: 3px solid green;
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+.banner-right{
+    border: 3px solid rosybrown;
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+/* xử lý img */
+.bannerleft-img-block{
+    width: 100%;
+    height: 100%;
+}
+.bannerleft-img-block img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bannerright-img-block{
+    width: 100%;
+    height: 50%;
+}
+.bannerright-img-block img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menu-list{
+    list-style-type: none;
+}
+.menu-item{
+    float: left;
+}
+.menu-item:hover{
+    background-color: darkgrey;
+}
+.menu-link{
+    display: block;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    text-decoration: none;
+}

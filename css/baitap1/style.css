@@ -1,0 +1,68 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* clearfix */
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*  */
+.container{
+    background-color: rgba(219, 154, 176, 0.642);
+    /* max-width: 1280px; */
+    width: 100%;
+}
+.menu-list{
+    list-style-type: none;
+}
+.menu-item{
+    float: left;
+    margin: 10px;
+}
+/*  */
+.container2{
+    height: 45rem;
+}
+.side-left{
+    background-color: rgba(108, 145, 108, 0.7);
+    float: left;
+    height: 100%;
+    width: 70%;
+    padding: 20px;
+}
+.side-right{
+    background-color: rgb(162, 149, 198);
+    float: left;
+    height: 100%;
+    width: 30%;
+    padding: 20px;
+}
+/*  */
+/* .container3{
+
+} */
+.menu-list3{
+padding: 0px 0px 0px 40px;
+}
+/* .menu-link3{
+
+} */
+/*  */
+.demo-footer{
+    background-color: rgb(241, 241, 142);
+    padding: 10px 20px;
+}
+.all{
+    border: 10px solid grey;
+}

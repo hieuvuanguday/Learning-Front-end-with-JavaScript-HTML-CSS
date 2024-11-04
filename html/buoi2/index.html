@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2</title>
+    <!--không định dàng style cho từng thẻ -->
+    <style>
+        /* CSS */
+        /* Select tag name: chọn đối tượng bằng tên thẻ */
+        p {
+            color: red;
+        }
+        /* Đổi tất cả thẻ p thành màu đỏ */
+        p:nth-child(2){
+            color: blue; 
+        }
+        /* Nếu thẻ thứ 2 từ trên xuống là p thì đổi thành màu xanh */
+        /* Select theo class
+        Class: là một cái tên lưu thuộc tính
+        tag nào có class thì sẽ kế thừa các thuộc tính đó
+        dùng dấu . để tạo class */
+        .dacbiet{
+            color: green !important;
+        }
+        .dacbiet2{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- Quotations - display: inline: dùng thêm ""-->
+    <p class="dacbiet dacbiet2"> <!-- Ưu tiên cho các thuộc tính của class vào cuối
+                                        nhưng nếu các class được định danh !important thì theo class đós -->
+        Có một người từng nói rằng "muốn đi nhanh thì đi một mình, muốn đi xa thì đi một mình"
+    </p>
+    <p>
+        Có một người từng nói rằng <q>muốn đi nhanh thì đi một mình, muốn đi xa thì đi một mình</q>
+    </p>
+    <!-- Blockquote (hết xài rồi) -->
+    <!-- abbr -->
+    <p>Công chúa được gả cho <abbr style="text-decoration: underline solid" title="Lê Hồ Điệp">người đẹp trai nhất</abbr> </p> 
+    <!-- Chú thích nghĩa
+            underline dotted: gạch chân bằng dấu chấm
+            underline solid: gạch chân bằng đường liền
+            underline dashed: gạch chân bằng gạch nối -->
+    <!-- Address: p + em (display: block)- hết xài rồi -->
+    <address>115/13 Đường Đình Phong Phú</address>    
+    <!-- cite: p + em (display: inline) -->
+    <p><cite>Bức tranh này được vẽ bởi</cite> Viemt Vẫn Good</p>
+    <!-- bdo: dùng đảo chữ (display: inline)-->
+    <bdo dir="rtl">Xin chào các bạn</bdo>
+</body> 
+</html>
+<!-- CSS
+-color: đổi màu chữ
+-background-color: đổi màu của nền
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: buổi 1-2</title>
+    <!-- background | dựng Layout cơ bản bằng float -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- background -->
+    <div class="demo1-bg"></div>
+    <div class="demo2-bg"></div>
+    <div class="demo-fixed"></div>
+    <!-- Tập chia layout bằng float -->
+    <div class="container">
+        <div class="banner-block clearfix">
+            <div class="banner-left">
+                <div class="bannerleft-img-block">
+                    <img src="./Banner1.png" alt="Banner1" />
+                </div>
+            </div>
+            <div class="banner-right">
+                <div class="bannerright-img-block">
+                    <img src="./Banner2.png" alt="Banner2" />
+                </div>
+                <div class="bannerright-img-block">
+                    <img src="./Banner3.png" alt="Banner3" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="container">
+        <ul class="menu-list clearfix">
+            <li class="menu-item"><a class="menu-link" href="#">Home</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">About us</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Price</a></li>
+            <li class="menu-item"><a class="menu-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div style="height: 100vh"></div>
+</body>
+</html>

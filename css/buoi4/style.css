@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* Card */
+.container{
+    /* border: 1px solid #eeeeee; Tắt đi mới đủ chỗ */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+.card__carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card__block{
+    border: 1px solid #eeeeee;
+    width: 25.6rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    transition: 0.3s;
+}
+.card__block:hover{
+    box-shadow: 3px 3px 3px 3px #afafaf;
+}
+.card__img{
+    border: 1px solid #eeeeee;
+    height: 24.6rem;
+    /* border-radius: 50%;
+    overflow: hidden; */ /* Cách làm hình tròn */
+}
+.card__img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.card__info{
+    border: 1px solid #eeeeee;
+    padding: 0.5rem 0;
+}
+.card__info p{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.card__info p span{
+    font-weight: 400;
+}
+.card__controller{
+    border: 1px solid #eeeeee;
+    display: flex;
+}
+.card__controller .card__controller__block:first-child{
+    border-right: 1px solid #eeeeee;
+}
+.card__controller .card__controller__block:last-child{
+    border-left: 1px solid #eeeeee;
+}
+.card__controller__block{
+    width: 50%;
+}
+.btn__card__controller{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: rgb(102, 189, 189);
+    color: white;
+    height: 3rem;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn__card__controller:hover{
+    background-color: rgb(51, 208, 213);
+}

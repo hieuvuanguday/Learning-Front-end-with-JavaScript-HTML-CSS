@@ -1,0 +1,6 @@
+.demo-tbl, .demo-tbl td{
+    border: 2px solid rgb(0, 0, 163);
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 0 auto;
+}

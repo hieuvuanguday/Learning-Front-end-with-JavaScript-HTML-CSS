@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- đặt link bootStrap ở đây -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <!-- code here -->
+    <div class="container">
+        <h1 class="text-center text-info">Validate Form Project</h1>
+        <!-- form thêm novalidate để mình tự chỉnh thay vì nó chỉnh sẵn cho mình -->
+        <form novalidate>
+            <!-- email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input id="email" type="email" class="form-control" placeholder="name@example.com" />
+                <!-- placeholder là chữ trong ô input khi mình gõ thì nó tự mất -->
+            </div>
+            <!-- name -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" type="text" class="form-control" />
+            </div>
+            <!-- gender -->
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" class="form-select">
+                    <!-- nếu k chọn gì thì là rỗng -> option1 để selected xem như đã chọn -->
+                    <option value="" selected>Choice</option>
+                    <option value="1">Male</option>                   
+                    <option value="2">Female</option>
+                    <option value="3">Others</option>
+                </select>
+            </div>
+            <!-- Country -->
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <div class="form-check form-check-country">
+                    <!-- thêm name vì 2 cái div riêng nhưng đều trả giá trị cho div lớn country -->
+                    <input id="vietnam" type="radio" name="country" class="form-check-input" />
+                    <label for="vietnam" class="form-check-label">VietNam</label>
+                </div>
+                <div class="form-check form-check-country">
+                    <!-- thêm name vì 2 cái div riêng nhưng đều trả giá trị cho div lớn country -->
+                    <input id="others" type="radio" name="country" class="form-check-input" />
+                    <label for="others" class="form-check-label">Others</label>
+                </div>
+            </div>
+            <!-- Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" class="form-control" />
+            </div>
+            <!-- PasswordConfirm -->
+            <div class="mb-3">
+                <label for="confirmedPassword" class="form-label">Confirm Password</label>
+                <input id="confirmedPassword" type="password" class="form-control" />
+            </div>
+            <!-- Agree -->
+            <div class="mb-3 form-check">
+                <input id="agree" type="checkbox" value="true" class="form-check-input" />
+                <label for="agree" class="form-check-label">I agree with rules </label>
+            </div>
+            <!-- Submit -->
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="./style.js"></script>
+</body>
+</html>
+<!-- form-control dùng cho những input dạng text hay number -->
+<!-- form-select dùng cho input dạng select -->
+<!-- form-check-label cho radio checkbox -->

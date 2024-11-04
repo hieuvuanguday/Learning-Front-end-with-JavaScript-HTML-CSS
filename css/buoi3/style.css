@@ -1,0 +1,220 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* Demo transfrom */
+.demo-transform{
+    height: 100vh;
+    border: 5px solid rebeccapurple;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.demo-div{
+    width: 10rem;
+    height: 5rem;
+    background-color: rosybrown;
+    border: 3px solid red;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    transition: 1s;
+}
+.demo-div:hover{
+    /* transform: rotate(90deg); */
+    /* transform: scale(2, 1); truyền cho 2 trục */
+    transform: skew(75deg, 75deg) scale(2) rotate(60000deg);
+    /* transform: scale(2) rotate(60000deg); */
+    /* transform: matrix(); shorthand của transform/
+    /* 3D */
+    /* transform: rotateY(75deg); */
+    transition: 1s;
+}
+/* Menu */
+.nav-bg{
+    /* border: 2px solid red; */
+    background-color: rgb(232, 231, 231);
+}
+.container{
+    /* border: 2px solid aquamarine; */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.nav{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+.nav-logo{
+    /* border: 2px solid blueviolet; */
+}
+.nav-logo a{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #03a4ed;
+    letter-spacing: 2px;
+}
+.nav-logo a span{
+    color: #fe3f40;
+}
+.nav-menu{
+    /* border: 2px solid blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu__list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.nav-menu__item{
+    padding: 0 2rem;
+    /* border: 2px solid green; */
+}
+.nav-menu__link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #2a2a2a;
+    transition: 0.3s;
+}
+.nav-menu__link:hover{
+    color: #fe3f40;
+}
+.actived{
+    color: #fe3f40;
+}
+.btn-contact{
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    color: #fafafa;
+    background-color: #fe3f40;
+    border-radius: 23px;
+    transition: 0.3s;
+}
+.btn-contact:hover{
+    background-color: #03a4ed;
+}
+.btn-toggle-menu{
+    display: none;
+}
+@media (max-width: 950px) {
+    .btn-contact{
+        display: none;
+    }
+    .nav-menu__item{
+        padding: 0 1.2rem;
+    }
+    .nav{
+        justify-content: center;
+    }
+}
+@media (max-width: 745px) {
+    .btn-toggle-menu{
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 4rem;
+        width: 4rem;
+        z-index: 999;
+        opacity: 0;
+    }
+    .nav{
+        position: relative;
+        justify-content: flex-start;
+    }
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        z-index: 999;
+        height: 0%;
+        overflow: hidden;
+        transition: 0.3s;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+    .nav-menu__list{
+        display: block;
+    }
+    .nav-menu__item{
+        padding: 0 0;
+    }
+    .nav-menu__link{
+        display: block;
+        width: 36rem;
+        padding: 1rem 0;
+        text-align: center;
+        background-color: rgb(232, 231, 231);
+    }
+    .nav-menu__link:hover{
+        background-color: rgb(165, 165, 165); 
+    }
+    .btn-toggle-menu:checked ~ .nav-menu{
+        height: 259.2%;
+        opacity: 1;
+    }
+    .toggle-menu-icon{
+        position: absolute;
+        right: 0;
+        width: 4rem;
+        height: 4rem;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+    }
+    .toggle-menu-icon span{
+        display: block;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .toggle-menu-icon span::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 80%;
+        transition: 0.3s;
+    }
+    .toggle-menu-icon span::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background-color: #2a2a2a;
+        width: 80%;
+        transition: 0.3s;
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span::before{
+        top: 50%;
+        transform: translate(-11%, -50%) rotate(45deg);
+        width: 138%;
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span::after{
+        top: 50%;
+        transform: translate(-11%, -50%) rotate(-45deg);
+        width: 138%;
+    }
+    .btn-toggle-menu:checked ~ .toggle-menu-icon span{
+        width: 0;
+    }
+}

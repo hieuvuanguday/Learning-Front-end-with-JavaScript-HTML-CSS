@@ -1,0 +1,38 @@
+/* demo1-btn */
+.demo1-btn{
+    color: teal;
+}
+.demo1-btn:active{
+    color: hotpink !important;
+}
+.demo1-btn:hover{
+    color: yellow;  
+}
+/* demo2-btn */
+.demo2-btn{
+    display: inline-block;
+    border: 2px solid black;
+    /* border: <độ dày(px)> <kiểu viền> <màu> */
+    color: black;
+    text-decoration: none; 
+    padding: 20px;
+    /* padding: 5px 10px 15px 20px; sẽ sắp xếp trên-phải-dưới-trái */
+    /* padding: 5px 10px 20px; xếp trên - hai bên - dưới */
+    /* padding: 10px 20px; xếp trên + dưới - hai bên */
+    margin: 10px;
+    text-transform: uppercase;
+    transition: 0.4s; /* Độ trễ, thay đổi tất cả các giai đoạn của nút */
+}
+.demo2-btn:hover{
+    color: white;
+    background-color: black;  
+    /* transition: 0.4s; bỏ đây thì lúc đưa chuột vào mượt, đưa ra vẫn giật */
+    font-size: 20px; /* Tạo hiệu ứng phóng to */
+}
+.img-demo{
+    cursor: default;
+    opacity: 0.3;
+}
+/* model box
+-Padding: là khoảng cách từ viền vào content
+-Margin: là khoảng cách từ viền trở ra */

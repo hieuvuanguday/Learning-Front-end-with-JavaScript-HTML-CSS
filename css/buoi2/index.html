@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: buổi 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <!-- để CSS ở dưới để được ưu tiên -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font|onclick|flex thay thế float|position
+    |pseudo element|demo button|  -->
+</head>
+<body>
+    <!-- font -->
+    <p>Xin chào các bạn, mình là PIED đến từ FULLHOUSE <br />
+    Một ngày bên FULHOUSE trả mình 8tr để dạy angular</p>
+    <!-- demo attribute onclick
+    khi click vào thì sẽ làm gì đó -->
+    <button class="btn" onclick="this.style.color='red'">Click Me!</button>
+
+    <!-- flex dùng để chia Layout thay thế cho float -->
+    <div class="cha">
+        <div class="con1"></div>
+        <div class="con2"></div>
+    </div>
+    <!-- demo flex -->
+    <div class="chachu">
+        <div class="chau">
+            <h1>Anh cháu thích cô chắc</h1>
+            <p>Nhà anh cháu bên trái kế nhà cô chắc</p>
+            <p>Mà có vẻ như là cô chắc chắc là không thích anh cháu</p>
+        </div>
+        <div class="chac">
+            <h1>Nhà cô chắc chắc là bên phải sát nhà anh cháu</h1>
+            <p>Anh cháu cái gì cũng tốt trừ đôi đôn chề</p>
+            <p>Anh cháu có vui chơi với Johnny Đen, và anh Cáo</p>
+            <p>Dù rằng anh cháu có vẻ thích cô chắc nhưng chắc là chắc không thích
+                được anh cháu, vì anh <br />
+                cháu không chơi đồng dbrr
+            </p>
+        </div>
+    </div>
+    <!-- demo position -->
+    <div class="big-div">
+        <div class="small-div">Tôi là div nhỏ</div>
+        <p>Tôi là Johnny Đen, 5 anh em chơi nhau <br />
+            tôi, Cáo, thánh liếm, big mike, duck batman <br />
+            Tôi là Johnny Đen, 5 anh em chơi nhau <br />
+            tôi, Cáo, thánh liếm, big mike, duck batman <br />
+            Tôi là Johnny Đen, 5 anh em chơi nhau <br />
+            tôi, Cáo, thánh liếm, big mike, duck batman <br />
+            Tôi là Johnny Đen, 5 anh em chơi nhau <br />
+            tôi, Cáo, thánh liếm, big mike, duck batman <br />
+            Tôi là Johnny Đen, 5 anh em chơi nhau <br />
+            tôi, Cáo, thánh liếm, big mike, duck batman <br />
+        </p>
+    </div>
+
+    <!-- psuedo element -->
+    <div class="ahihi">
+        Xin chào
+    </div>
+    <!-- button siêu đẹp bằng position và psuedo element -->
+    <button class="btn-demo">Button</button>
+</body>
+</html>

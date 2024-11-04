@@ -1,0 +1,109 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    font-size: 1.6rem;
+}
+/* flex */
+.cha{
+    border: 2px solid red;
+    display: flex;
+}
+.con1{
+    border: 2px solid blue;
+    width: 10rem;
+    height: 20rem;
+}
+.con2{
+    border: 2px solid green;
+    width: 10rem;
+    height: 20rem;
+}
+/* flex */
+.chachu{
+    border: 2px solid red;
+    display: flex;
+}
+.chau{
+    border: 2px soli blue;
+    width: 30rem;
+}
+.chac{
+    border: 2px solid green;
+    width: calc(100vw - 30rem);
+}
+/* demo position */
+.big-div{
+    border: 2px solid teal;
+    width: 30rem;
+    /* position: relative; */
+    /* position: fixed; */
+    /* top: 0; */
+}
+.small-div{
+    border: 2px solid orange;
+    background-color: rgba(0, 255, 255, 0.5);
+    /* position: relative;
+    top: 2rem;
+    left: 2rem; cùi bắp, dùng để xài absolute*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* cho nằm chính giữa của div cha */
+}
+/* position: static; mặc định|tĩnh|không xê dịch
+   position: relative; sẽ xê dịch với tham chiếu
+   là nó nếu static
+   position: absolute; sẽ xê dịch với tham chiếu
+   là 1 thằng cha có position khác static
+   position: fixed; cố định ở đâu đó trên màn hình
+   position: sticky; lướt thì nó mới cố định */
+.btn{
+    position: sticky;
+    top: 2rem;
+}
+/* psuedo tag: div span
+   psuedo class: hover| active| visited|
+   unvisited| focus
+   psuedo element: ::after| ::before
+ */
+ .ahihi::before{
+    content: "hehe";
+ }
+ /* demo button siêu đẹp */
+ .btn-demo{
+    margin: 3rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: gray;
+    position: relative;
+}
+.btn-demo::after{
+    content: "";
+    position: absolute;
+    background-color: gray;
+    top: 0;
+    height: 100%;
+    right: 0;
+    width: 0;
+    transition: 0.3s;
+    z-index: -1; /* chỉ dùng cho position */
+}
+.btn-demo:hover::after{
+    left: 0;
+    width: 100%;
+}
+.btn-demo:hover{
+    color: white;
+}
